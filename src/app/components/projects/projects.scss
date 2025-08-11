@@ -1,0 +1,107 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+
+.language {
+  background-color: rgba(3, 218, 198, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.featured-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.featured-card {
+  background-color: var(--surface-color);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.card-role {
+  display: block;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.card-title-small {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.card-description-small {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin: 0.5rem 0;
+}
+
+.other-projects-section {
+  margin-top: 4rem;
+}
+
+.private-repo-tag {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #aaa; 
+  cursor: default; 
+}

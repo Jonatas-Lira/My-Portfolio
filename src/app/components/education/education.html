@@ -1,0 +1,19 @@
+<section class="page-container">
+  <h2>Formação Acadêmica</h2>
+  <p>Minha jornada acadêmica e os fundamentos do meu conhecimento técnico.</p>
+
+  <div class="experience-timeline" *ngIf="education$ | async as educationItems">
+    <div class="timeline-item" *ngFor="let edu of educationItems">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">{{ edu.title }}</h3>
+        <p class="timeline-institution">
+          <strong>{{ edu.institution }}</strong> | {{ edu.period }}
+        </p>
+        <p class="timeline-description" *ngIf="edu.description">
+          {{ edu.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

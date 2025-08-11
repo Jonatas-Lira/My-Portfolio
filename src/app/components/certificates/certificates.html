@@ -1,0 +1,30 @@
+<section class="page-container">
+  <h2>Certificados e Mentorias</h2>
+  <p>Minhas principais certificações de cursos e comprovações de atividades extracurriculares.</p>
+
+  <div class="certificates-grid" *ngIf="certificates$ | async as certificates">
+    <article class="certificate-card" *ngFor="let cert of certificates">
+      
+      <div class="card-body">
+        <h3 class="card-title">{{ cert.subject }}</h3>
+        
+        <div class="card-meta">
+          <span class="card-context-tag">{{ cert.title }}</span>
+          <p class="institution-period">
+            {{ cert.institution }} | {{ cert.period }}
+          </p>
+        </div>
+
+        <p class="card-description">
+          {{ cert.description }}
+        </p>
+      </div>
+
+      <div class="card-footer">
+        <a *ngIf="cert.imageUrl" [href]="cert.imageUrl" target="_blank" class="button-primary">
+          Ver Certificado
+        </a>
+      </div>
+    </article>
+  </div>
+</section>

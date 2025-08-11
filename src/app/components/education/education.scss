@@ -1,0 +1,41 @@
+.experience-timeline {
+  margin-top: 3rem;
+  position: relative;
+  padding-left: 30px; 
+  border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 2px solid var(--background-color);
+}
+
+.timeline-title {
+  margin: 0.25rem 0;
+  font-size: 1.3rem;
+}
+
+.timeline-institution {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.timeline-description {
+    font-size: 0.9rem;
+}

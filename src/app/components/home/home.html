@@ -1,0 +1,47 @@
+<section class="page-container">
+  <div class="summary-section">
+    <h1>Jonatas Trindade</h1>
+    <p class="lead">
+      Estudante de Engenharia de Software (3º ano) com especialização em
+      desenvolvimento Full-Stack. Proficiente em Java, Spring Boot, React e SQL.
+      Possuo experiência prática na construção de plataformas de e-commerce em
+      ambiente acadêmico.
+    </p>
+    <p>
+      Comprovadas habilidades de comunicação e liderança adquiridas em mais de
+      30 horas de mentoria de programação. Busco uma oportunidade de estágio
+      para contribuir na criação de soluções de software de alto impacto.
+    </p>
+  </div>
+
+  <div class="skills-section">
+    <h2>Principais Competências</h2>
+
+    <div class="skill-level-group">
+      <h3>Tecnologias Principais</h3>
+      <div class="skills-list" *ngIf="principalSkills$ | async as skills">
+        <span *ngFor="let skill of skills" class="skill-tag principal">
+          <i [class]="skill.iconClass"></i> {{ skill.name }}
+        </span>
+      </div>
+    </div>
+
+    <div class="skill-level-group">
+      <h3>Bons Conhecimentos</h3>
+      <div class="skills-list" *ngIf="secondarySkills$ | async as skills">
+        <span *ngFor="let skill of skills" class="skill-tag secondary">
+          <i [class]="skill.iconClass"></i> {{ skill.name }}
+        </span>
+      </div>
+    </div>
+
+    <div class="skill-level-group">
+      <h3>Familiaridade / Estudando</h3>
+      <div class="skills-list" *ngIf="familiarSkills$ | async as skills">
+        <span *ngFor="let skill of skills" class="skill-tag familiar">
+          <i [class]="skill.iconClass"></i> {{ skill.name }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

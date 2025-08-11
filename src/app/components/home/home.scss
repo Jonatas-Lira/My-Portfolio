@@ -1,0 +1,79 @@
+.page-container {
+  max-width: 900px;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.skills-section {
+  margin-top: 4rem;
+}
+
+.skill-level-group {
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.1rem;
+    color: #ccc;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px; 
+  font-weight: 500;
+  font-size: 0.9rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+ i {
+    font-size: 1.2em;
+  }
+  &:hover {
+    transform: translateY(-2px);
+    border-color: #ccc;
+  }
+}
+
+.skill-tag.principal {
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+  border-color: var(--primary-color);
+
+  &:hover {
+    background-color: var(--on-surface-color); 
+    border-color: var(--on-surface-color);
+    color: var(--surface-color);
+    transform: translateY(-2px);
+  }
+}
+
+.skill-tag.secondary {
+  background-color: var(--surface-color);
+  color: var(--on-surface-color);
+}
+
+.skill-tag.familiar {
+  background-color: transparent;
+  color: #aaa;
+  border-color: #444;
+}
