@@ -1,59 +1,58 @@
-# MyPortfolio
+# Portfólio Pessoal - Jonatas Trindade
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto é uma Single-Page Application (SPA) moderna, desenvolvida para apresentar minha trajetória, projetos e habilidades como Desenvolvedor de Software.
 
-## Development server
+**[➡️ Acesse a versão ao vivo aqui!](URL_DO_SEU_PORTFOLIO_PUBLICADO_AQUI)**
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## ✨ Principais Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Design Moderno e Responsivo:** Interface com tema escuro (dark mode) que se adapta perfeitamente a desktops, tablets e celulares.
+* **Integração com a API do GitHub:** Uma seção que lista dinamicamente meus repositórios públicos, mantendo o portfólio sempre atualizado com meus últimos trabalhos.
+* **Projetos em Destaque:** Uma área dedicada para detalhar projetos importantes (incluindo projetos acadêmicos e privados), descrevendo meu papel, o propósito do projeto e as tecnologias utilizadas.
+* **Seções Detalhadas:** Páginas específicas e organizadas para apresentar minha **Formação Acadêmica** e meus **Certificados e Experiências** relevantes.
+* **Arquitetura Moderna:** Construído com a arquitetura de Standalone Components do Angular, garantindo um código mais limpo e modular.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-ng generate component component-name
-```
+* **Frontend:**
+    * **Angular (v17+)**
+    * **TypeScript**
+    * **SCSS**
+* **Ferramentas de Desenvolvimento:**
+    * Angular CLI
+    * Git & GitHub
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## ⚙️ Como Executar o Projeto Localmente
 
-## Building
+Siga os passos abaixo para rodar o projeto em seu ambiente de desenvolvimento.
 
-To build the project run:
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    ```
 
-```bash
-ng build
-```
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd nome-do-repositorio
+    ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-## Running unit tests
+4.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    ng serve -o
+    ```
+    O aplicativo abrirá automaticamente em `http://localhost:4200/`.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Obrigado pela visita! Sinta-se à vontade para explorar o código.
