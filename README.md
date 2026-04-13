@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto é uma Single-Page Application (SPA) moderna, desenvolvida para apresentar minha trajetória, projetos e habilidades como Desenvolvedor de Software.
 
-**[➡️ Acesse a versão ao vivo aqui!](URL_DO_SEU_PORTFOLIO_PUBLICADO_AQUI)**
+**[➡️ Acesse a versão ao vivo aqui!](https://jonatas-lira.github.io/My-Portfolio/home)**
 
 ---
 
